@@ -1,0 +1,29 @@
+*{
+    font-family: 'PT Sans Narrow', sans-serif;
+    color:aliceblue
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.color-1{
+    background-color:#e7bfe8 ;
+}
+.color-2{
+    background-color: #dda0dd;
+}
+.color-3{
+    background-color:#a950a7 ;
+}
+
+#palabra{
+    background-color: #dda0dd;
+
+}
+#palabra:focus{
+    background-color: #e7bfe8;
+
+}
+img{
+    width: 50px;
+    height: 500px;
+}
