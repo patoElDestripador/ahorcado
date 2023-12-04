@@ -22,7 +22,7 @@ if(pos != -1){
 function generarPalabra(){
     document.getElementById("palabra").innerHTML = ""
     for (let index = 0; index < seleccionarPalabra.length; index++) {
-        document.getElementById("palabra").innerText += ` _ `
+        document.getElementById("palabra").innerText += `_`
     }
 }
 
@@ -37,19 +37,17 @@ function jugar() {
     console.log(`Te quedan ${intento} intentos fallidos`);
     let letra = document.getElementById("palabraInput").value
     if(seleccionarPalabra2 == letra){
-        alert(`${nombreUsuario} jmm pai mero teso le gano al sistema con toda ${seleccionarPalabra2}`);
-        
-    }else if(validarLetra(letra) == 0){
+        alert(`${nombreUsuario} jmm pai mero teso le gano al sistema con toda la palabra si era ${seleccionarPalabra2}`);
+        document.getElementById("palabra").innerHTML = seleccionarPalabra2
+    }else if(validarLetra(letra) == 0 && intento >= 0 ){
         alert(`${nombreUsuario} esa no existe pai`);
         intento--;
     }else if(seleccionarPalabra.length == 0){
         alert(`${nombreUsuario} jmm pai mero teso le gano al sistema la palabra era ${seleccionarPalabra2}`);
     }
+    letra = ' ';
     if(intento == 0){
         console.log(`${nombreUsuario} JMMMM mero malo pai la proxima ni lo intente dediquese a vender bon ice mejor, la palabra era ${seleccionarPalabra2}`);
             //No permitir seguir jugando o cambiar de palabra cuando intentos lleguen a 0 
     }
-    
-    letra.innerHTML = ' '
-
 }
