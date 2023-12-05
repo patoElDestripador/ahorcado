@@ -24,7 +24,7 @@ function generarPalabra(){
     //reinciio de caracteres
     seleccionarPalabra = palabras[Math.trunc(Math.random() * palabras.length)].split("");
     palabrasArray = [];
-    seleccionarPalabra2 = seleccionarPalabra
+/*     seleccionarPalabra2 = seleccionarPalabra */
     intento = 7;
     let palabra = document.getElementById("palabra")
     palabra.innerHTML = "";
@@ -80,3 +80,13 @@ function jugar() {
     
 }
 
+/* document.getElementById("palabratext")
+    .addEventListener("keyup", function(e) {
+        if (e.keyCode === 13) {
+            document.getElementById("btnGuardar").click();
+        }
+    });
+ 
+document.getElementById("btnGuardar").onclick = function() {
+    jugar();
+} */
