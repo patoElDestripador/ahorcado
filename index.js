@@ -55,7 +55,7 @@ function jugar() {
     document.getElementById("palabraInput").value = ""
 
 
-   if(seleccionarPalabra2 == letra ){
+if(seleccionarPalabra2 == letra ){
         alert(`${nombreUsuario} jmm pai mero teso le gano al sistema con toda la palabra si era ${seleccionarPalabra2}`);
         document.getElementById("palabra").innerHTML = seleccionarPalabra2
         //volver a jugar 
